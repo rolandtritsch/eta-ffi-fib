@@ -8,4 +8,4 @@ main :: IO ()
 main = do
   args <- getArgs
   let n = read $ head args
-  print $ fib' n
+  print $ fib'' n
