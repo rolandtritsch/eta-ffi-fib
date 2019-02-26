@@ -1,31 +1,22 @@
 name:                eta-ffi-fib
 version:             0.1.0.0
-github:              "githubuser/eta-ffi-fib"
+github:              "rolandtritsch/eta-ffi-fib"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2019 Author name here"
+author:              "Roland Tritsch"
+maintainer:          "roland@tritsch.org"
+copyright:           "2019 Roland Tritsch"
 
 extra-source-files:
 - README.md
 - ChangeLog.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/eta-ffi-fib#readme>
+description:         Please see the README on GitHub
 
 dependencies:
 - base >= 4.7 && < 5
 
 library:
   source-dirs: src
-  dependencies:
-  - transformers
 
 executables:
   eta-ffi-fib-exe:
@@ -37,7 +28,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - eta-ffi-fib
-    - transformers
 
 tests:
   eta-ffi-fib-test:
@@ -49,3 +39,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - eta-ffi-fib
+    - hspec
